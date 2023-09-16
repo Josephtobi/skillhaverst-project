@@ -14,18 +14,35 @@
 .gallery-item .overlay.overlay-6 a::after,
 .gallery-item .overlay.overlay-7 a::after, 
 .gallery-item .overlay.overlay-8 a::after,
-.gallery-item .overlay.overlay-9 a::after{
+.gallery-item .overlay.overlay-9 a::after,
+.gallery-item .overlay.overlay-10 a::after,
+.gallery-item .overlay.overlay-11 a::after{
 position: absolute;
-left: -3rem;
+left: -4rem;
 color: white;
 font-weight: bold;
 top: 4em;
-width: 300%;
+width: 400%;
 height: 50%;
+white-space: pre-line;
 /* background: lightblue; */
 }
+
+/* .gallery-item .overlay.overlay-1 a::before{
+    content: "Mr. Joseph";
+     position: relative; 
+left: -4rem;
+color: white;
+font-weight: bold;
+top: 5em;
+width: 400%;
+height: 50%;
+white-space: pre;
+} */
+
 .gallery-item .overlay.overlay-1 a::after{
-    content: "Goodluck Stephen";
+    content: attr(data-content);
+    line-height: 1.3;
 }
 .gallery-item .overlay.overlay-2 a::after{
     content: "Video Editing";
@@ -37,21 +54,33 @@ height: 50%;
     content: "Data Science";
 }
 .gallery-item .overlay.overlay-5 a::after{
-    content: "content Writing";
+    content: attr(data-content);
+    line-height: 1.3;
+    /* content: "content Writing"; */
 }
 .gallery-item .overlay.overlay-6 a::after{
-    content: "Graphics Design";
+    content: attr(data-content);
+    line-height: 1.3;
 }
+
 .gallery-item .overlay.overlay-7 a::after{
-    content: "New content";
+    content: "Content Creator";
 }
 .gallery-item .overlay.overlay-8 a::after{
-    content: "Frontend Dev";
+    content: attr(data-content);
+    line-height: 1.3;
+    /* content: "Video/Content Creator"; */
 }
 .gallery-item .overlay.overlay-9 a::after{
-    content: "Frontend Dev";
+    content: attr(data-content);
+    line-height: 1.3;
 }
 .gallery-item .overlay.overlay-10 a::after{
-    content: "Frontend Dev";
+    content: attr(data-content);
+    line-height: 1.3;
+}
+.gallery-item .overlay.overlay-11 a::after{
+    content: attr(data-content);
+    line-height: 1.3;
 }
 
