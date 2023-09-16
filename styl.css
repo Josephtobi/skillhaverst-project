@@ -1,1 +1,57 @@
 /* .hexagon-in2 {background-position: initial !important;} */
+
+
+/* .overlay-B{
+    position: relative;
+} */
+
+
+.gallery-item .overlay.overlay-1 a::after, 
+.gallery-item .overlay.overlay-2 a::after,
+.gallery-item .overlay.overlay-3 a::after,
+.gallery-item .overlay.overlay-4 a::after, 
+.gallery-item .overlay.overlay-5 a::after,
+.gallery-item .overlay.overlay-6 a::after,
+.gallery-item .overlay.overlay-7 a::after, 
+.gallery-item .overlay.overlay-8 a::after,
+.gallery-item .overlay.overlay-9 a::after{
+position: absolute;
+left: -3rem;
+color: white;
+font-weight: bold;
+top: 4em;
+width: 300%;
+height: 50%;
+/* background: lightblue; */
+}
+.gallery-item .overlay.overlay-1 a::after{
+    content: "Goodluck Stephen";
+}
+.gallery-item .overlay.overlay-2 a::after{
+    content: "Video Editing";
+}
+.gallery-item .overlay.overlay-3 a::after{
+    content: "Frontend Dev";
+}
+.gallery-item .overlay.overlay-4 a::after{
+    content: "Data Science";
+}
+.gallery-item .overlay.overlay-5 a::after{
+    content: "content Writing";
+}
+.gallery-item .overlay.overlay-6 a::after{
+    content: "Graphics Design";
+}
+.gallery-item .overlay.overlay-7 a::after{
+    content: "New content";
+}
+.gallery-item .overlay.overlay-8 a::after{
+    content: "Frontend Dev";
+}
+.gallery-item .overlay.overlay-9 a::after{
+    content: "Frontend Dev";
+}
+.gallery-item .overlay.overlay-10 a::after{
+    content: "Frontend Dev";
+}
+
