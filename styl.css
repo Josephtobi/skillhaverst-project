@@ -20,7 +20,8 @@
 .gallery-item .overlay.overlay-12 a::after,
 .gallery-item .overlay.overlay-13 a::after,
 .gallery-item .overlay.overlay-14 a::after,
-.gallery-item .overlay.overlay-15 a::after{
+.gallery-item .overlay.overlay-15 a::after,
+.gallery-item .overlay.overlay-16 a::after{
 position: absolute;
 left: -4rem;
 color: white;
@@ -104,6 +105,10 @@ white-space: pre;
     line-height: 1.3;
 }
 .gallery-item .overlay.overlay-15 a::after{
+    content: attr(data-content);
+    line-height: 1.3;
+}
+.gallery-item .overlay.overlay-16 a::after{
     content: attr(data-content);
     line-height: 1.3;
 }
