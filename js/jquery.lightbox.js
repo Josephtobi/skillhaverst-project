@@ -34,6 +34,16 @@
 			
             init: function (items) {
                 plugin.items = items;
+                if (opts.caption) {
+                    plugin.caption = $('.lightbox-caption', plugin.lightbox);
+                }
+
+
+
+             
+
+
+
 				plugin.selector = "lightbox-"+Math.random().toString().replace('.','');
 
                 if (!plugin.lightbox) {
@@ -44,7 +54,7 @@
                       '<a href="#" class="lightbox-previous lightbox-button"></a>' +
                       '<a href="#" class="lightbox-next lightbox-button"></a>' +
                       '</div>' +
-                      '<div href="#" class="lightbox-caption"><p></p></div>' +
+                      '<div href="#" class="lightbox-caption"><p>LIGHT BOX TEXTING</p></div>' +
                       '</div>'
                     );
 
@@ -84,7 +94,7 @@
                 var caption = $(plugin.current).data('caption');
                 if(!!caption && caption.length > 0) {
                     plugin.caption.fadeIn();
-                    $('p', plugin.caption).text(caption);
+                    $('p', plugin.caption).html(caption);
                 }else{
                     plugin.caption.hide();
                 }
@@ -150,6 +160,14 @@
                         return;
                     }
                     var self = $(this)[0];
+
+                    if (opts.caption) {
+                        plugin.setCaption();
+                    }
+
+
+
+
                     e.preventDefault();
                     plugin.current = self;
                     plugin.loadImage();
