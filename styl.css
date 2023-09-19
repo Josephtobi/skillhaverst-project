@@ -18,7 +18,9 @@
 .gallery-item .overlay.overlay-10 a::after,
 .gallery-item .overlay.overlay-11 a::after,
 .gallery-item .overlay.overlay-12 a::after,
-.gallery-item .overlay.overlay-13 a::after{
+.gallery-item .overlay.overlay-13 a::after,
+.gallery-item .overlay.overlay-14 a::after,
+.gallery-item .overlay.overlay-15 a::after{
 position: absolute;
 left: -4rem;
 color: white;
@@ -47,10 +49,12 @@ white-space: pre;
     line-height: 1.3;
 }
 .gallery-item .overlay.overlay-2 a::after{
-    content: "Video Editing";
+    content: attr(data-content);
+    line-height: 1.3;
 }
 .gallery-item .overlay.overlay-3 a::after{
-    content: "Frontend Dev";
+    content: attr(data-content);
+    line-height: 1.3;
 }
 .gallery-item .overlay.overlay-4 a::after{
     content: attr(data-content);
@@ -67,7 +71,8 @@ white-space: pre;
 }
 
 .gallery-item .overlay.overlay-7 a::after{
-    content: "Content Creator";
+    content: attr(data-content);
+    line-height: 1.3;
 }
 .gallery-item .overlay.overlay-8 a::after{
     content: attr(data-content);
@@ -91,6 +96,14 @@ white-space: pre;
     line-height: 1.3;
 }
 .gallery-item .overlay.overlay-13 a::after{
+    content: attr(data-content);
+    line-height: 1.3;
+}
+.gallery-item .overlay.overlay-14 a::after{
+    content: attr(data-content);
+    line-height: 1.3;
+}
+.gallery-item .overlay.overlay-15 a::after{
     content: attr(data-content);
     line-height: 1.3;
 }
